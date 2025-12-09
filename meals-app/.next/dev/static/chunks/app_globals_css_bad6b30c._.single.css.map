@@ -1,6 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/globals.css"],"sourcesContent":["@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&family=Montserrat:wght@400;700&display=swap');\n\n* {\n  box-sizing: border-box;\n}\n\nhtml {\n  font-family: 'Quicksand', sans-serif;\n}\n\nbody {\n  margin: 0;\n  background: radial-gradient(#282c34, #282c34);\n}\n\n\n\n.not-found,\n.error {\n  margin-top: 5rem;\n  text-align: center;\n}\n\n.not-found h1,\n.error h1 {\n  font-size: 5rem;\n  margin: 0px;\n  font-weight: 900;\n  color: #262626;\n  text-transform: uppercase;\n  background: linear-gradient(90deg, #f9572a, #ffc905);\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  background-size: cover;\n  background-position: center;\n  font-family: 'Montserrat', sans-serif;\n}\n\n.not-found p,\n.error p {\n  font-size: 1.5rem;\n  font-weight: 500;\n  color: #ddd8d8;\n}"],"names":[],"mappings":"AAEA;;;;AAIA;;;;AAIA;;;;;AAOA;;;;;AAMA;;;;;;;;;;;;;;AAeA"}}]
-}
