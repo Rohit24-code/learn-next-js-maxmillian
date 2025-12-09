@@ -1,0 +1,76 @@
+/* [project]/app/page.module.css [app-client] (css) */
+.page-module__E0kJGG__header {
+  gap: 3rem;
+  width: 90%;
+  max-width: 75rem;
+  margin: 3rem auto;
+  display: flex;
+}
+
+.page-module__E0kJGG__slideshow {
+  width: 40rem;
+  height: 25rem;
+}
+
+.page-module__E0kJGG__hero {
+  color: #ddd6cb;
+  font-size: 1.5rem;
+}
+
+.page-module__E0kJGG__hero h1 {
+  letter-spacing: .15rem;
+  text-transform: uppercase;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(90deg, #f9572a, #ffc905);
+  -webkit-background-clip: text;
+  background-clip: text;
+  font-family: Montserrat, sans-serif;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.page-module__E0kJGG__cta {
+  gap: 1rem;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+.page-module__E0kJGG__cta a {
+  color: #fff;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  border-radius: .5rem;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.page-module__E0kJGG__cta a:hover, .page-module__E0kJGG__cta a:active {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+}
+
+.page-module__E0kJGG__cta a:first-child {
+  color: #ff9b05;
+  background: none;
+  padding-left: 0;
+  font-weight: normal;
+}
+
+.page-module__E0kJGG__cta a:first-child:hover, .page-module__E0kJGG__cta a:first-child:active {
+  color: #f9b241;
+  background: none;
+}
+
+.page-module__E0kJGG__section {
+  color: #ddd6cb;
+  text-align: center;
+  flex-direction: column;
+  width: 90%;
+  max-width: 50rem;
+  margin: 2rem auto;
+  font-size: 1.5rem;
+  display: flex;
+}
+
+/*# sourceMappingURL=app_page_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,40 @@
+/* [project]/app/meals/page.module.css [app-client] (css) */
+.page-module__vM3LKW__header {
+  text-align: center;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.page-module__vM3LKW__cta {
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.page-module__vM3LKW__cta a {
+  color: #fff;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  border-radius: .5rem;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.page-module__vM3LKW__cta a:hover, .page-module__vM3LKW__cta a:active {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+}
+
+.page-module__vM3LKW__cta a:first-child {
+  color: #ff9b05;
+  background: none;
+  padding-left: 0;
+  font-weight: normal;
+}
+
+.page-module__vM3LKW__cta a:first-child:hover, .page-module__vM3LKW__cta a:first-child:active {
+  color: #f9b241;
+  background: none;
+}
+
+/*# sourceMappingURL=app_meals_page_module_css_bad6b30c._.single.css.map*/

@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 4, "column": 0}, "map": {"version":3,"sources":["file:///Users/stco/personal/nextjs-maxmiller/meals-app/app/meals/error.js"],"sourcesContent":["\"use client\"\nimport React from 'react'\n\nconst Error = () => {\n  return (\n    <main className='error'>\n        <h1>Something went wrong</h1>\n        <p>Please try again later</p>\n        </main>\n  )\n}\n\nexport default Error"],"names":[],"mappings":";;;;;AACA;AADA;;;AAGA,MAAM,QAAQ;IACZ,qBACE,6LAAC;QAAK,WAAU;;0BACZ,6LAAC;0BAAG;;;;;;0BACJ,6LAAC;0BAAE;;;;;;;;;;;;AAGX;KAPM;uCASS"}}]
+}

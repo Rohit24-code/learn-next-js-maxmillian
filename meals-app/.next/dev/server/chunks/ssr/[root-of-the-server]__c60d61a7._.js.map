@@ -1,0 +1,7 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 27, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/main-header/nav-link.module.css [app-ssr] (css module)"],"sourcesContent":["__turbopack_context__.v({\n  \"active\": \"nav-link-module__Gu52iW__active\",\n  \"link\": \"nav-link-module__Gu52iW__link\",\n});\n"],"names":[],"mappings":"AAAA;AACA;AACA;AACA"}},
+    {"offset": {"line": 35, "column": 0}, "map": {"version":3,"sources":["file:///Users/stco/personal/nextjs-maxmiller/meals-app/components/main-header/nav-link.js"],"sourcesContent":["'use client'\nimport React from 'react'\nimport Link from 'next/link'\nimport { usePathname } from 'next/navigation'\nimport classes from './nav-link.module.css'\n\nconst NavLink = ( {href,children}) => {\n    const path = usePathname()\n  return (\n    <Link href={href} className={path?.startsWith(href) ? `${classes.active} ${classes.link}` : classes.link}>{children}</Link>\n  )\n}\n\nexport default NavLink"],"names":[],"mappings":";;;;;AACA;AACA;AACA;AACA;AAJA;;;;;;AAMA,MAAM,UAAU,CAAE,EAAC,IAAI,EAAC,QAAQ,EAAC;IAC7B,MAAM,OAAO,IAAA,iJAAW;IAC1B,qBACE,8OAAC,uKAAI;QAAC,MAAM;QAAM,WAAW,MAAM,WAAW,QAAQ,GAAG,kKAAO,CAAC,MAAM,CAAC,CAAC,EAAE,kKAAO,CAAC,IAAI,EAAE,GAAG,kKAAO,CAAC,IAAI;kBAAG;;;;;;AAE/G;uCAEe"}}]
+}

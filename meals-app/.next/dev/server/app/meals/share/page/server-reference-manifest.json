@@ -1,0 +1,20 @@
+{
+  "node": {
+    "607a708f598a5dd1ec60aeb735de54ac4fc038044e": {
+      "workers": {
+        "app/meals/share/page": {
+          "moduleId": "[project]/.next-internal/server/app/meals/share/page/actions.js { ACTIONS_MODULE0 => \"[project]/lib/actions.js [app-rsc] (ecmascript)\" } [app-rsc] (server actions loader, ecmascript)",
+          "async": false,
+          "exportedName": "shareMeal",
+          "filename": "lib/actions.js"
+        }
+      },
+      "layer": {
+        "app/meals/share/page": "action-browser"
+      },
+      "exportedName": "shareMeal",
+      "filename": "lib/actions.js"
+    }
+  },
+  "edge": {}
+}

@@ -1,0 +1,76 @@
+/* [project]/components/meals/meals-item.module.css [app-client] (css) */
+.meals-item-module__v3KMcG__meal {
+  color: #ddd6cb;
+  background: linear-gradient(90deg, #2c1e19, #25200f);
+  border-radius: 4px;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  transition: all .3s ease-in-out;
+  display: flex;
+  overflow: hidden;
+  box-shadow: 0 0 12px #0000004d;
+}
+
+.meals-item-module__v3KMcG__headerText {
+  padding: .5rem 1rem 0;
+}
+
+.meals-item-module__v3KMcG__headerText h2 {
+  margin: 0;
+  font-family: Montserrat, sans-serif;
+  font-size: 1.5rem;
+}
+
+.meals-item-module__v3KMcG__headerText p {
+  color: #cfa69b;
+  font-size: .75rem;
+  font-style: italic;
+}
+
+.meals-item-module__v3KMcG__meal h2, .meals-item-module__v3KMcG__meal p {
+  margin: 0;
+}
+
+.meals-item-module__v3KMcG__image {
+  height: 15rem;
+  position: relative;
+}
+
+.meals-item-module__v3KMcG__meal img {
+  object-fit: cover;
+}
+
+.meals-item-module__v3KMcG__content {
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  display: flex;
+}
+
+.meals-item-module__v3KMcG__summary {
+  padding: 1rem 1rem 0;
+}
+
+.meals-item-module__v3KMcG__actions {
+  text-align: right;
+  padding: 1rem;
+}
+
+.meals-item-module__v3KMcG__actions a {
+  color: #fff;
+  background: linear-gradient(90deg, #f9572a, #ff9b05);
+  border-radius: .5rem;
+  margin-top: 1rem;
+  padding: .5rem 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.meals-item-module__v3KMcG__actions a:hover, .meals-item-module__v3KMcG__actions a:active {
+  background: linear-gradient(90deg, #fd4715, #f9b241);
+  box-shadow: 0 0 12px #f26412cc;
+}
+
+/*# sourceMappingURL=components_meals_meals-item_module_css_bad6b30c._.single.css.map*/

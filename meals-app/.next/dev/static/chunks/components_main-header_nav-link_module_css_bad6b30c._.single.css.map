@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/main-header/nav-link.module.css"],"sourcesContent":[".active {\n  background: linear-gradient(90deg, #ff8a05, #f9b331);\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n}\n\n.link ul {\n  list-style: none;\n  margin: 0;\n  padding: 0;\n  display: flex;\n  gap: 1.5rem;\n  /* font-family: 'Montserrat', sans-serif; */\n  font-size: 1.25rem;\n}\n\n.link a {\n  text-decoration: none;\n  color: #ddd6cb;\n  font-weight: bold;\n  padding: 0.5rem 1rem;\n  border-radius: 0.5rem;\n}\n\n.link a:hover,\n.link a:active {\n  background: linear-gradient(90deg, #ff8a05, #f9b331);\n  background-clip: text;\n  -webkit-background-clip: text;\n  -webkit-text-fill-color: transparent;\n  text-shadow: 0 0 18px rgba(248, 190, 42, 0.8);\n}\n"],"names":[],"mappings":"AAAA;;;;;;;AAOA;;;;;;;;;AAUA;;;;;;;;AAQA"}}]
+}

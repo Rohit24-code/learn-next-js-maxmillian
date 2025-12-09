@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/components/meals/meals-grid.module.css"],"sourcesContent":[".meals {\n  width: 90%;\n  max-width: 90rem;\n  display: grid;\n  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));\n  grid-gap: 5rem;\n  margin: 2rem auto;\n  list-style: none;\n  padding: 0;\n}"],"names":[],"mappings":"AAAA"}}]
+}

@@ -1,0 +1,13 @@
+/* [project]/components/meals/meals-grid.module.css [app-client] (css) */
+.meals-grid-module__omPeKq__meals {
+  grid-gap: 5rem;
+  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  width: 90%;
+  max-width: 90rem;
+  margin: 2rem auto;
+  padding: 0;
+  list-style: none;
+  display: grid;
+}
+
+/*# sourceMappingURL=components_meals_meals-grid_module_css_bad6b30c._.single.css.map*/

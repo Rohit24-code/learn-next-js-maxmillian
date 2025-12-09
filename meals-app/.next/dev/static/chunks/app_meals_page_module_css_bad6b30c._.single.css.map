@@ -1,0 +1,6 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack:///[project]/app/meals/page.module.css"],"sourcesContent":[".header {\n    text-align: center;\n    margin-bottom: 2rem;\n    color: #fff;\n}\n.cta {\n  font-size: 1.5rem;\n  /* display: flex; */\n  /* gap: 1rem; */\n  text-align: center;\n}\n\n.cta a {\n  display: inline-block;\n  margin-top: 1rem;\n  padding: 0.5rem 1rem;\n  border-radius: 0.5rem;\n  background: linear-gradient(90deg, #f9572a, #ff9b05);\n  color: #ffffff;\n  font-weight: bold;\n  text-decoration: none;\n}\n\n.cta a:hover,\n.cta a:active {\n  background: linear-gradient(90deg, #fd4715, #f9b241);\n}\n\n.cta a:first-child {\n  background: transparent;\n  font-weight: normal;\n  color: #ff9b05;\n  padding-left: 0;\n}\n\n.cta a:first-child:hover,\n.cta a:first-child:active {\n  background: transparent;\n  color: #f9b241;\n}"],"names":[],"mappings":"AAAA;;;;;;AAKA;;;;;AAOA;;;;;;;;;;;AAWA;;;;AAKA;;;;;;;AAOA"}}]
+}
