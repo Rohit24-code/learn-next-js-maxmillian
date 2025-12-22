@@ -1,10 +1,8 @@
-'use client'
-import { DUMMY_NEWS } from "@/dummy-news";
+
 import Image from "next/image";
-import { useRouter } from "next/navigation";
 import { notFound } from "next/navigation";
-
-
+import { getNewsItem } from "@/lib/news";
+import ModalBackdrop from "@/components/MainHeader/modal-backdrop";
 // this is a example for interceptor page 
 // what it does is when we came to the page 
 // through a link or something it will show this page but
@@ -18,11 +16,9 @@ import { notFound } from "next/navigation";
 
 // the path is . because @parallel route is ignored
 
-
-const InterceptedImagePage = ({ params }) => {
-    const router = useRouter();
+const InterceptedImagePage = async ({ params }) => {
     const slug = params.slug;
-    const newsItem = DUMMY_NEWS.find((news) => news.slug === slug);
+    const newsItem = await getNewsItem(slug);
 
     if (!newsItem) {
         notFound();
@@ -30,7 +26,7 @@ const InterceptedImagePage = ({ params }) => {
 
     return (
         <>
-            <div className="modal-backdrop" onClick={router.back} />
+            <ModalBackdrop />
             <dialog className="modal" open>
                 <div className="fullscreen-image">
                     <div style={{ position: "relative", height: "70vh" }}>

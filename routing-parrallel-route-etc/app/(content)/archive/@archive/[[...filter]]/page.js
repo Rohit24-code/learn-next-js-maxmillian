@@ -1,5 +1,5 @@
 import { getAvailableNewsMonths, getAvailableNewsYears, getNewsForYear, getNewsForYearAndMonth } from '@/lib/news';
-import React from 'react'
+import React, { Suspense } from 'react'
 import NewsList from '@/components/MainHeader/news-list'
 import Link from 'next/link';
 
@@ -7,23 +7,50 @@ import Link from 'next/link';
 // this [[...something]] is a catch-all route that are inside the /archive folder
 // it will match /archive/2020 and /archive/2020/10/10
 
-const FilteredNewsPage = ({ params }) => {
-    const filter = params.filter;
-    console.log(filter, "filtewrer")
 
-    const selectedYear = filter?.[0];
-    const selectedMonth = filter?.[1];
-    const selectedDay = filter?.[2];
-    let news;
-    let links = getAvailableNewsYears();
-    if (selectedYear && !selectedMonth) {
-        news = getNewsForYear(selectedYear);
-        links = getAvailableNewsMonths(selectedYear);
+async function FilterHeader({ year, month }) {
+    const availableYear = await getAvailableNewsYears();
+    let links = availableYear;
+    if (year && !month) {
+
+        links = getAvailableNewsMonths(year);
     }
 
-    if (selectedYear && selectedMonth) {
-        news = getNewsForYearAndMonth(selectedYear, selectedMonth);
+    if (year && month) {
+
         links = [];
+    }
+
+    if (year && !availableYear?.includes(year) ||
+        month && !getAvailableNewsMonths(year)?.includes(month)) {
+        throw new Error("No news found for the selected period");
+    }
+
+    return <header id="archive-header">
+        <nav>
+            <ul>
+                {links.map((link) => {
+                    const href = year ? `/archive/${year}/${link}` : `/archive/${link}`;
+
+
+                    return <li key={link}>
+                        <Link href={href}>{link}</Link>
+                    </li>
+                })}
+            </ul>
+        </nav>
+    </header>;
+}
+
+
+async function FilteredNews({ year, month }) {
+    let news;
+
+
+    if (year && !month) {
+        news = await getNewsForYear(year);
+    } else if (year && month) {
+        news = await getNewsForYearAndMonth(year, month);
     }
 
     let newsContent = <p>No news found for the selected period</p>
@@ -31,30 +58,30 @@ const FilteredNewsPage = ({ params }) => {
         newsContent = <NewsList news={news} />
     }
 
-    if (selectedYear && !getAvailableNewsYears().includes(+selectedYear) || selectedMonth && !getAvailableNewsMonths(+selectedYear).includes(+selectedMonth)) {
-        throw new Error("No news found for the selected period");
-    }
+    return newsContent;
+}
+
+const FilteredNewsPage = async ({ params }) => {
+    const filter = params.filter;
+
+
+    const selectedYear = filter?.[0];
+    const selectedMonth = filter?.[1];
+
+
+
 
     return (
         <>
-            <header id="archive-header">
-                <nav>
-                    <ul>
-                        {links.map((link) => {
-                            const href = selectedYear ? `/archive/${selectedYear}/${link}` : `/archive/${link}`;
 
+            {/* we can also use both in one suspense we did this to granulary add loaders */}
+            <Suspense fallback={<p>Loading... header</p>}>
+                <FilterHeader year={selectedYear} month={selectedMonth} />
+            </Suspense>
 
-                            return <li key={link}>
-                                <Link href={href}>{link}</Link>
-                            </li>
-                        })}
-                    </ul>
-                </nav>
-            </header>
-            {
-                newsContent
-
-            }
+            <Suspense fallback={<p>Loading... news</p>}>
+                <FilteredNews year={selectedYear} month={selectedMonth} />
+            </Suspense>
         </>
     )
 }

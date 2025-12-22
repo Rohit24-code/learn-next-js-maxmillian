@@ -3,6 +3,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 const NewsList = ({ news }) => {
+
     return (
         <div>
             <ul className='news-list'>

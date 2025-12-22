@@ -1,12 +1,12 @@
-import { DUMMY_NEWS } from '@/dummy-news'
 import Image from 'next/image'
 import { notFound } from 'next/navigation'
 import React from 'react'
 import Link from 'next/link'
+import { getNewsItem } from '@/lib/news'
 
 const NewsDetailsPage = async ({ params }) => {
     let finalParams = await params
-    const newsItem = DUMMY_NEWS.find((news) => news.slug === finalParams.slug)
+    const newsItem = await getNewsItem(finalParams.slug)
 
     if (!newsItem) {
         notFound()
